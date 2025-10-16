@@ -2,13 +2,13 @@
 	background: 
 	radial-gradient(
 		circle at 40% 50%,
-		#666666 0%,
-		#666666 0%,
-		transparent 40%
+		rgba(102, 102, 102, 0.5) 0%,
+		rgba(102, 102, 102, 0.5) 0%,
+		transparent 70%
 	),
 	radial-gradient(
 		circle at 80% 50%,
-		transparent 20%
+		transparent 70%
 	),
 	#000000;
 	display: flex;
@@ -105,13 +105,13 @@
 		background: 
 		radial-gradient(
 			circle at 40% 60%,
-			#666666 0%,
-			#666666 0%,
-			transparent 40%
+			rgba(102, 102, 102, 0.5) 0%,
+			rgba(102, 102, 102, 0.5) 0%,
+			transparent 70%
 		),
 		radial-gradient(
 			circle at 80% 50%,
-			transparent 50%
+			transparent 70%
 		),
 		#000000;
 	}
@@ -153,9 +153,9 @@
 		background: 
 		radial-gradient(
 			circle at 40% 60%,
-			#666666 0%,
-			#666666 0%,
-			transparent 60%
+			rgba(102, 102, 102, 0.5) 0%,
+			rgba(102, 102, 102, 0.5) 0%,
+			transparent 70%
 		),
 		radial-gradient(
 			circle at 80% 50%,
