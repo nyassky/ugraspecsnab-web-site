@@ -1,0 +1,296 @@
+.container {
+    position: relative;
+    background-color: black;
+    max-width: 1920px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 1920px;
+    z-index: 2;
+    padding-top: 140px;
+    margin-top: 396px;
+    padding-left: 50px;
+    padding-right: 50px;
+    box-sizing: border-box;
+}
+
+.left_column {
+    display: flex;
+    flex-direction: column;
+}
+
+.right_column {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: left;
+    margin-right: 100px;
+    margin-top: -230px;
+}
+
+.content h1 {
+    color: white;
+    font-family: 'Widock', sans-serif;
+    font-weight: bold;
+    font-size: 64px;
+}
+
+.logo {
+    padding-bottom: 75px;
+}
+
+.title {
+    color: white;
+    font-family: 'Bounded', sans-serif;
+    font-weight: 200;
+    font-size: 32px;
+    padding-bottom: 75px;
+}
+
+.text {
+    color: white;
+    font-family: 'Bounded', sans-serif;
+    font-weight: 200;
+    font-size: 24px;
+}
+
+.backgroundImage {
+    width: 100%;
+    height: auto;
+    z-index: -1;
+    margin-top: -80px;
+    max-width: 1920px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+	min-height: 1000px;
+}
+
+.mobileText {
+    display: none;
+}
+
+/* ===== МЕДИА-ЗАПРОСЫ ===== */
+
+/* 1300px - Большие планшеты */
+@media (max-width: 1300px) {
+    .content {
+        padding-left: 40px;
+        padding-right: 40px;
+        margin-top: 300px;
+    }
+    .content h1 {
+        font-size: 50px;
+    }
+    .logo {
+        margin-top: 30px;
+        max-width: 360px;
+        max-height: 280px;
+    }
+    .text {
+        font-size: 20px;
+    }
+    .title {
+        font-size: 24px;
+        padding-bottom: 57px;
+    }
+    .right_column {
+        margin-right: 60px;
+    }
+}
+
+/* 1100px - Средние планшеты */
+@media (max-width: 1100px) {
+    .content {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    .right_column {
+        margin-right: 40px;
+    }
+}
+
+/* 960px - Малые планшеты (основные изменения структуры) */
+@media (max-width: 960px) {
+    .mobileText {
+        display: block;
+        order: 3;
+        margin-top: 40px;
+    }
+    .desktopText {
+        display: none;
+    }
+    .content {
+        margin-top: 230px;
+        padding-top: 80px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .left_column {
+        display: flex;
+        flex-direction: column;
+    }
+    .left_column .title {
+        order: 2;
+        padding-bottom: 10px;
+        font-family: 'Widock', sans-serif;
+        font-size: 24px;
+        font-weight: 700;
+    }
+    .left_column h1 {
+        order: 1;
+        padding-bottom: 57px;
+        font-size: 36px;
+    }
+    .left_column .mobileText {
+        order: 3;
+    }
+    .right_column {
+        order: 2;
+        margin-right: 0;
+        margin-top: 50px;
+        align-items: flex-end;
+    }
+    .content h1 {
+        font-size: 42px;
+    }
+    .title {
+        font-size: 22px;
+    }
+    .text {
+        font-size: 18px;
+    }
+    .logo {
+        padding-bottom: 40px;
+        max-width: 390px;
+        margin-top: 0;
+    }
+}
+
+/* 900px - Уточнения для малых планшетов */
+@media (max-width: 900px) {
+    .left_column .title {
+        padding-bottom: 0px;
+        font-size: 20px;
+    }
+    .left_column h1 {
+        padding-bottom: 30px;
+        font-size: 36px;
+    }
+    .content h1 {
+        font-size: 36px;
+    }
+    .title {
+        font-size: 20px;
+    }
+    .text {
+        font-size: 16px;
+    }
+    .logo {
+        max-width: 300px;
+    }
+}
+
+/* 760px - Большие мобильные */
+@media (max-width: 760px) {
+    .left_column .title {
+        font-size: 16px;
+    }
+    .left_column h1 {
+        padding-bottom: 30px;
+        font-size: 30px;
+    }
+    .right_column {
+        margin-right: 50px;
+    }
+    .content h1 {
+        font-size: 30px;
+    }
+    .text {
+        font-size: 16px;
+    }
+    .logo {
+        padding-bottom: 0px;
+        max-width: 250px;
+    }
+}
+
+/* 600px - Средние мобильные (добавьте этот запрос) */
+@media (max-width: 600px) {
+    .content {
+        margin-top: 230px;
+        padding-top: 60px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .left_column .title {
+        font-size: 14px;
+    }
+    .left_column h1 {
+        padding-bottom: 20px;
+        font-size: 24px;
+    }
+    .right_column {
+        margin-right: 30px;
+        margin-top: 30px;
+    }
+    .content h1 {
+        font-size: 24px;
+    }
+    .text {
+        font-size: 14px;
+    }
+    .logo {
+        max-width: 200px;
+    }
+    .mobileText {
+        margin-top: 30px;
+    }
+}
+
+/* 480px - Малые мобильные */
+@media (max-width: 480px) {
+    .content {
+        margin-top: 230px;
+        padding-top: 40px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .left_column .title {
+        font-size: 12px;
+    }
+    .left_column h1 {
+        padding-bottom: 15px;
+        font-size: 20px;
+    }
+    .right_column {
+        margin-right: 0;
+        margin-top: 20px;
+    }
+    .content h1 {
+        font-size: 20px;
+    }
+    .title {
+        font-size: 12px;
+    }
+    .text {
+        font-size: 12px;
+    }
+    .logo {
+        padding-bottom: 20px;
+        max-width: 150px;
+    }
+    .mobileText {
+        margin-top: 20px;
+        font-size: 12px;
+    }
+}
