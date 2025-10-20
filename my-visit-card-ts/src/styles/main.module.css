@@ -4,8 +4,8 @@
     max-width: 1920px;
     margin: 0 auto;
     width: 100%;
+	min-height: 100vh;
 }
-
 .content {
     display: flex;
     justify-content: space-between;
@@ -22,12 +22,10 @@
     padding-right: 50px;
     box-sizing: border-box;
 }
-
 .left_column {
     display: flex;
     flex-direction: column;
 }
-
 .right_column {
     display: flex;
     flex-direction: column;
@@ -36,18 +34,15 @@
     margin-right: 100px;
     margin-top: -230px;
 }
-
 .content h1 {
     color: white;
     font-family: 'Widock', sans-serif;
     font-weight: bold;
     font-size: 64px;
 }
-
 .logo {
     padding-bottom: 75px;
 }
-
 .title {
     color: white;
     font-family: 'Bounded', sans-serif;
@@ -55,14 +50,12 @@
     font-size: 32px;
     padding-bottom: 75px;
 }
-
 .text {
     color: white;
     font-family: 'Bounded', sans-serif;
     font-weight: 200;
     font-size: 24px;
 }
-
 .backgroundImage {
     width: 100%;
     height: auto;
@@ -74,11 +67,112 @@
     display: block;
 	min-height: 1000px;
 }
-
 .mobileText {
     display: none;
 }
-
+.about_section {
+    position: absolute;
+    top: 1020px;
+    left: 0;
+    width: 100%;
+    padding: 100px 50px;
+    z-index: 1;
+    box-sizing: border-box;
+}
+.about_content {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 60px;
+	align-items: start;
+}
+.about_button {
+	background-color: transparent;
+	border: 2px solid white;
+	color: white;
+	padding: 15px 40px;
+	font-family: 'Bounded', sans-serif;
+	font-weight: 200;
+	width: 162px;
+	height: 50px;
+	text-align: center;
+	font-size: 16px;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	box-sizing: border-box;
+	transition: all 0.3s ease;
+	border-radius: 45px;
+}
+.about_button:hover {
+	background-color: white;
+	color: black;
+}
+.arrow {
+	transition: filter 0.3s ease;
+}
+.about_button:hover .arrow {
+	filter: invert(1);
+}
+.about_image img {
+	width: 100%;
+	height: auto;
+	border-radius: 10px;
+}
+.about_us_info h1{
+	font-family: 'Widock', sans-serif;
+	font-weight: 700;
+	font-size: 48px;
+	color: white;
+	padding-bottom: 100px;
+}
+.about_us_info p{
+	font-family: 'Bounded', sans-serif;
+	font-weight: 200;
+	font-size: 24px;
+	color: white;
+}
+.about_stats {
+	width: 100%;
+	margin-top: 50px;
+}
+.about_image_container {
+	width: 100%;
+	display: flex;
+	justify-content: flex-end;
+}
+.about_image {
+	max-width: 100%;
+	height: auto;
+}
+.statLine {
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+    position: relative;
+}
+.statLine::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 500px;
+    height: 1px;
+    background-color: white;
+}
+.statNumber {
+	font-family: 'Bounded';
+	font-weight: 400;
+	font-size: 32px;
+	color: white;
+	margin-right: 20px;
+}
+.statText {
+	font-family: 'Bounded';
+	font-weight: 200;
+	font-size: 24px;
+	color: white;
+}
 /* ===== МЕДИА-ЗАПРОСЫ ===== */
 
 /* 1300px - Большие планшеты */
