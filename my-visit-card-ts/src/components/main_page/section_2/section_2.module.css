@@ -365,5 +365,55 @@
 	}
 }
 @media(max-width: 600px){
-	
+	.about_content {
+		margin-top: -150px;
+	}
+	.mobileImage {
+		max-height: 300px;
+		max-width: 230px;
+	}
+}
+@media(max-width: 480px){
+	.about_content{
+		padding: 0 20px;
+	}
+	.right_column{
+		padding: 0 20px;
+	}
+	.mobileImage{
+		max-width: 180px;
+		max-height: 250px;
+	}
+	.about_us_info{
+		margin-left: 0px;
+	}
+	.about_us_info h1{
+		font-size: 20px;
+	}
+	.about_us_info p{
+		font-size: 12px;
+	}
+	.about_button{
+		margin-top: 40px;
+		max-width: 160px;
+		max-height: 45px;
+	}
+}
+@media(max-width: 415px){
+	.about_content {
+		margin-top: -100px;
+	}
+	.right_column{
+		padding: 0 20px;
+	}
+	.mobileImage{
+		max-width: 160px;
+		max-height: 220px;
+	}
+	.statNumber{
+		font-size: 12px;
+	}
+	.statText{
+		font-size: 12px;
+	}
 }
