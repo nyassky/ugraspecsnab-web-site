@@ -21,7 +21,7 @@
 	position: fixed;
 	top: 0;
 	width: 100%;
-	backdrop-filter: blur(15px);
+	backdrop-filter: blur(1px);
 	z-index: 1000;
 }
 .header__content {
