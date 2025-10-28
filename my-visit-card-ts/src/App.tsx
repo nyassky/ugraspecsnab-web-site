@@ -1,5 +1,5 @@
-import Header from "./components/header/header";
-import Footer from './components/footer/footer'
+import MainPage from './components/main_page/main_page';
+
 import './styles/global.css'
 import {BrowserRouter, Route, Routes} from 'react-router-dom';
 
@@ -11,13 +11,8 @@ function App() {
 			<Routes>
 				<Route
 					path='/'
-					element={<Header />}
-				/>
-				<Route
-					path='/'
-					element={<Footer />}
-				/>
-				
+					element={<MainPage />}
+				/>		
 			</Routes>
 		</BrowserRouter>
 		
