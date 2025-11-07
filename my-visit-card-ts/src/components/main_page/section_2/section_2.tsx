@@ -5,6 +5,9 @@ import photo_about_us_2 from '/img/main_page/photo_about_us_2.svg'
 function SecondSection() {
 	return(
 		<section className={styles.about_section}>
+			<div className={styles.about_title_mobile}>
+				<h1>о нас</h1>
+			</div>
 			<div className={styles.about_content}>
 				<div className={styles.about_image_container}>
 						<img 
