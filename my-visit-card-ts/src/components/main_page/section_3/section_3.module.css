@@ -1,0 +1,429 @@
+.third_section {
+  position: relative;
+  width: 100%;
+  padding: 0 50px;
+  margin-top: 200px;
+  box-sizing: border-box;
+}
+
+
+.desktop_version {
+  display: flex;
+  justify-content: space-between;
+}
+
+.mobile_version {
+  display: none;
+}
+
+h1 {
+  color: white;
+  font-family: 'Widock';
+  font-size: 48px;
+}
+
+p {
+  color: white;
+  font-family: 'Bounded';
+  font-weight: 200;
+  font-size: 24px;
+}
+
+/* Анимации */
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(-50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInUp {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Начальное состояние */
+.title,
+.text,
+.photo_left,
+.photo_right,
+.about_button {
+  opacity: 0;
+}
+
+/* Анимации при появлении */
+.title.animated {
+  animation: slideInLeft 0.8s ease-out forwards;
+}
+
+.text.animated {
+  animation: slideInLeft 0.8s ease-out 0.2s forwards;
+}
+
+.photo_left.animated {
+  animation: slideInLeft 0.8s ease-out 0.2s forwards;
+}
+
+.photo_right.animated {
+  animation: slideInUp 0.8s ease-out forwards;
+}
+
+.about_button.animated {
+  animation: slideInUp 0.8s ease-out forwards;
+}
+
+.title {
+  margin-bottom: 180px;
+}
+
+.text {
+  margin-bottom: 115px;
+}
+
+.about_button {
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+  padding: 15px 33px;
+  font-family: 'Bounded', sans-serif;
+  font-weight: 200;
+  width: 202px;
+  height: 50px;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+  border-radius: 45px;
+}
+
+.about_button:hover {
+  background-color: white;
+  color: black;
+}
+
+.arrow {
+  transition: filter 0.3s ease;
+}
+
+.about_button:hover .arrow {
+  filter: invert(1);
+}
+
+.left_column {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.right_column {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+}
+
+.photo_right {
+  margin-bottom: 225px;
+  max-width: 560px;
+  max-height: 550px;
+}
+
+.photo_left img,
+.photo_right img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Медиа-запросы для адаптива */
+@media (max-width: 1600px) {
+  .third_section {
+    margin-top: 250px;
+  }
+}
+
+@media (max-width: 1500px) {
+  .third_section {
+    margin-top: 200px;
+  }
+}
+
+@media (max-width: 1400px) {
+  .third_section {
+    margin-top: 200px;
+  }
+}
+
+@media (max-width: 1300px) {
+  .third_section {
+    margin-top: 200px;
+  }
+   .photo_left,
+  .photo_right {
+    max-width: 480px;
+    max-height: 470px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .third_section {
+    margin-top: 150px;
+  }
+
+  .photo_left,
+  .photo_right {
+    max-width: 480px;
+    max-height: 470px;
+  }
+
+  .title {
+    margin-bottom: 160px;
+  }
+
+  .text {
+    margin-bottom: 100px;
+  }
+
+  .photo_right {
+    margin-bottom: 200px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .photo_left,
+  .photo_right {
+    max-width: 420px;
+    max-height: 410px;
+  }
+
+  .title {
+    margin-bottom: 140px;
+  }
+
+  .text {
+    margin-bottom: 90px;
+  }
+
+  .photo_right {
+    margin-bottom: 180px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .photo_left,
+  .photo_right {
+    max-width: 300px;
+    max-height: 282px;
+  }
+
+  .title {
+    margin-bottom: 120px;
+  }
+
+  .text {
+    margin-bottom: 80px;
+  }
+
+  .photo_right {
+    margin-bottom: 160px;
+  }
+}
+
+@media (max-width: 960px) {
+  .third_section {
+    margin-top: 200px;
+  }
+
+  /* Скрываем десктопную версию */
+  .desktop_version {
+    display: none;
+  }
+
+  /* Показываем мобильную версию */
+  .mobile_version {
+    display: block;
+  }
+
+  .header_row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 60px;
+  }
+
+  .title {
+    margin-bottom: 0;
+    flex-shrink: 0;
+  }
+
+  .title h1 {
+    font-size: 32px;
+    margin: 0;
+  }
+
+  /* Кнопка в header_row */
+  .about_button {
+    margin: 0;
+    flex-shrink: 0;
+    max-width: 212px;
+  }
+
+  /* Строка с картинками */
+  .images_row {
+    display: flex;
+    gap: 30px;
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .photo_left,
+  .photo_right {
+    margin-bottom: 0;
+    max-width: 300px;
+    max-height: 282px;
+    width: calc(50% - 15px);
+    flex: 0 0 calc(50% - 15px);
+  }
+  .button_container {
+	display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .third_section {
+    margin-top: 150px;
+  }
+
+  .header_row {
+    margin-bottom: 40px;
+  }
+
+  .title h1 {
+    font-size: 30px;
+  }
+
+  .about_button {
+    width: 180px;
+    height: 45px;
+    padding: 12px 25px;
+    font-size: 14px;
+  }
+
+  .images_row {
+    gap: 20px;
+  }
+
+  .photo_left,
+  .photo_right {
+    max-width: 200px;
+    max-height: 190px;
+    width: calc(50% - 10px);
+    flex: 0 0 calc(50% - 10px);
+  }
+  .button_container {
+	  display: none;
+  }
+}
+
+@media (max-width: 650px) {
+  .third_section {
+    margin-top: 120px;
+  }
+
+  /* Скрываем кнопку в header_row */
+  .header_row .about_button {
+    display: none;
+  }
+
+  /* Показываем кнопку под картинками */
+  .images_row {
+    position: relative;
+    margin-bottom: 60px;
+  }
+
+  .images_row::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+
+  .mobile_version::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+
+  /* Создаем контейнер для кнопки */
+  .button_container {
+    display: block;
+    width: 100%;
+    text-align: right;
+    margin-top: 30px;
+  }
+
+  .button_container .about_button {
+    display: inline-flex;
+    margin: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .header_row {
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .title h1 {
+    font-size: 28px;
+  }
+
+  .images_row {
+    gap: 20px;
+  }
+
+  .photo_left,
+  .photo_right {
+    width: 100%;
+    max-width: 130px;
+    max-height: 113px;
+  }
+
+  .button_container {
+    text-align: right;
+    margin-top: 30px;
+  }
+}
+@media (max-width: 480px){
+	.third_section {
+		padding: 0 20px;
+	}
+	.about_button {
+		max-width: 217px;
+	}
+	.title h1 {
+		font-size: 20px;
+	}
+}
+@media (max-width: 375px){
+	.third_section {
+		margin-top: 50px;
+	}
+	.title h1 {
+		font-size: 12px;
+	}
+}
+
