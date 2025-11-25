@@ -6,6 +6,7 @@ import background from '/img/main_page/background_main_page.svg'
 import background_2 from '/img/main_page/background_main_page_2.svg'
 import styles from '../../styles/main.module.css'
 import ThirdSection from "./section_3/section_3";
+import FourthSection from "./sectond_4/section_4";
 
 
 function MainPage(){
@@ -25,6 +26,7 @@ function MainPage(){
 				
 			</main>
 			<img src={background_2} alt="" className={styles.backgroundImage_2}/>
+			<FourthSection />
 			<Footer />
 		</div>
 	);

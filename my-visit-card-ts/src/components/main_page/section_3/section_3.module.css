@@ -5,17 +5,13 @@
   margin-top: 200px;
   box-sizing: border-box;
 }
-
-
 .desktop_version {
   display: flex;
   justify-content: space-between;
 }
-
 .mobile_version {
   display: none;
 }
-
 h1 {
   color: white;
   font-family: 'Widock';
@@ -313,7 +309,7 @@ p {
   }
 
   .title h1 {
-    font-size: 30px;
+    font-size: 20px;
   }
 
   .about_button {
@@ -348,7 +344,6 @@ p {
   .header_row .about_button {
     display: none;
   }
-
   /* Показываем кнопку под картинками */
   .images_row {
     position: relative;
@@ -388,7 +383,7 @@ p {
   }
 
   .title h1 {
-    font-size: 28px;
+    font-size: 20px;
   }
 
   .images_row {
@@ -424,6 +419,14 @@ p {
 	}
 	.title h1 {
 		font-size: 12px;
+	}
+	.about_button {
+		max-width: 150px;
+		max-height: 30px;
+		font-size: 12px;
+	}
+	.arrow {
+		max-width: 10px;
 	}
 }
 

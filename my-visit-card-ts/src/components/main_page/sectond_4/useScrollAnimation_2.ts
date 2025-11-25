@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import styles from './section_3.module.css';
+import styles from './section_4.module.css';
 
 export const useScrollAnimation = () => {
   useEffect(() => {
@@ -26,11 +26,9 @@ export const useScrollAnimation = () => {
     );
 
     const elements = document.querySelectorAll(`
-      .${styles.title}, 
-      .${styles.text}, 
-      .${styles.photo_left}, 
-      .${styles.photo_right}, 
-      .${styles.about_button}
+      .${styles.our_tech_text}, 
+      .${styles.ugraspecsnab_text}, 
+      .${styles.about_button}	
     `);
 
     elements.forEach((element) => {
