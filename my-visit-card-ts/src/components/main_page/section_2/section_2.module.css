@@ -105,6 +105,11 @@
 .mobileImage{
 	display: none;
 }
+@media(max-width: 1700px){
+	.about_content {
+		margin-top: -700px;
+	}
+}
 @media (max-width: 1600px) {
 	.about_content {
 		margin-top: -550px;
@@ -340,7 +345,7 @@
 }
 @media(max-width: 760px){
 	.about_us_info h1 {
-		font-size: 30px;
+		font-size: 20px;
 		padding-bottom: 30px;
 	}
 	.about_us_info p {
