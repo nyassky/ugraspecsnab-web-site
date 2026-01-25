@@ -2,7 +2,7 @@ import logo from "/img/header/logo.svg"
 import burger_menu from "/img/header/burger_menu.svg"
 import close_burger_menu from "/img/header/close_burger_menu.svg"
 import styles from '../../styles/header.module.css'
-import {Link} from 'react-router-dom'
+import {Link, NavLink} from 'react-router-dom'
 import {useState} from 'react'
 function Header(){
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -26,10 +26,10 @@ function Header(){
 			
 			<nav className={`${styles.header__nav} ${isMenuOpen ? styles.navOpen : ''}`}>
 				<ul>
-					{isMenuOpen ? <li><a href="#">Главная</a></li> : ''}
-					<li><a href="#">О нас</a></li>
-					<li><a href="#">Проекты</a></li>
-					<li><a href="#">Собственные Технологии</a></li>
+					{isMenuOpen ? <li><NavLink to="/">Главная</NavLink></li> : ''}
+					<li><NavLink to={'/about_us'}>О нас</NavLink></li>
+					<li><NavLink to={'/projects'}>Проекты</NavLink></li>
+					<li><NavLink to={'/our_tech'}>Собственные Технологии</NavLink></li>
 				</ul>
 			</nav>
 			{isMenuOpen && (

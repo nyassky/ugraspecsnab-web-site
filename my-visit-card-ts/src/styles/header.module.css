@@ -45,7 +45,7 @@
 	font-weight: 200;
 	transition: all 0.3s ease;
 }
-.header__nav a:hover {
+.header__nav a:hover{
 	text-shadow: 
 	0 0 1px white,
 	0 0 1px white,
@@ -55,7 +55,16 @@
 	0 0 2px white;
 	transform: translateY(-1px);
 }
-
+.header__nav a.active{
+	text-shadow: 
+	0 0 1px white,
+	0 0 1px white,
+	0 0 1px white,
+	0 0 1px white,
+	0 0 1px white,
+	0 0 2px white;
+	transform: translateY(-1px);
+}
 .burger {
 	display: none;
 	flex-direction: column;
