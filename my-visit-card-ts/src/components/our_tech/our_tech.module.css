@@ -1,0 +1,280 @@
+.container {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	background-color: black;
+	max-width: 1920px;
+	overflow: hidden;
+	/* фон */
+	background-image: url('../img/realized_projects/background_projects.svg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover; 
+	background-position-y: -1900px;
+}
+
+.main_container {
+	position: relative;          /* для фонового слоя, если нужен */
+	width: 100%;
+	min-height: 350vh;           /* контейнер занимает минимум экран */
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+
+}
+.title {
+	display: flex;
+	justify-content: flex-end;
+	margin-right: 100px;
+}
+h1 {
+	margin-top: 220px;
+	font-size: 36px;
+	font-family: 'Widock';
+}
+.logo_text {
+	display: flex;
+	gap: 100px;
+}
+.text_info {
+	display: flex;
+	flex-direction: column;
+	margin-top: 127px;
+	margin-right: 50px;
+}
+.logo_text img{
+	width: 100%;
+	max-width: 500px;
+	margin-top: -25px;
+}
+.logo_text p {
+	font-size: 24px;
+	font-weight: 100;
+	font-family: 'Bounded';
+}
+.group_1 {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 100px;
+	max-width: 728px;
+}
+.group_1 h3 {
+	margin-bottom: 20px;
+}
+.group_2 {
+	display: flex;
+	flex-direction: column;
+	max-width: 728px;
+}
+.group_2 h3 {
+	margin-bottom: 20px;
+}
+.group_1 h3,
+.group_2 h3 {
+	font-size: 20px;
+	font-weight: 600;
+	font-family: 'Widock';
+}
+.section_2 h1 {
+	margin-left: 100px;
+	margin-bottom: 100px;
+}
+.info_sec2 {
+	display: flex;
+	justify-content: flex-end;
+	width: 100%;
+	padding-right: 163px;
+	box-sizing: border-box;
+	margin-left: 50px;
+}
+.info_sec2 img {
+	max-width: 100%;
+	height: auto;
+	display: block;
+}
+.table {
+	margin-top: 100px;
+	display: flex;
+	justify-content: center;
+	margin-inline: 50px;
+}
+.table img {
+	width: 100%;      /* изображение заполняет контейнер */
+	max-width: 100%;  /* но не превышает его */
+	height: auto;     /* сохраняем пропорции */
+	display: block;
+}
+.notepad_text_sec2 {
+	display: none;
+	width: 100%;
+}
+.notepad_text_sec2 p {
+	width: 100%;
+}
+@media(max-width: 1176px){
+	.title {
+		justify-content: center;
+		margin-right: 0;
+		padding: 0 65px;
+		box-sizing: border-box;
+	}
+	h1 {
+		font-size: 32px;
+	}
+	.logo_text p {
+		font-size: 20px;
+	}
+	.logo_text img {
+		max-width: 270px;
+	}
+	.container {
+		background-position-y: -900px;
+	}
+}
+@media (max-width: 960px){
+	.info_sec2 {
+		padding-right: 50px; /* убираем ограничение справа */
+		margin-left: 50px; /* убираем отступ слева */
+		justify-content: flex-start; /* выравниваем по левому краю */
+	}
+	.container {
+		background-position-y: -700px;
+	}
+	.main_container {
+		min-height: 280vh;
+	}
+	.notepad_text_sec2 {
+		display: flex;
+	}
+	.notepad_text_sec2 p {
+		line-height: 2.5;
+		font-size: 24px;
+	}
+	.info_sec2 img {
+		display: none;
+	}
+	.group_1{
+		margin-bottom: 70px;
+	}
+	.section_2 h1 {
+		margin-left: 50px;
+		margin-bottom: 70px;
+	}
+	.logo_text {
+		gap: 60px;
+	}
+}
+@media (max-width: 796px) {
+	.main_container {
+		min-height: 200vh;
+	}
+	h1 {
+		font-size: 20px;
+	}
+	.logo_text p {
+		font-size: 16px;
+	}
+	.logo_text img {
+		max-width: 180px;
+		margin-top: -60px;
+	}
+	.group_1 h3,
+	.group_2 h3 {
+		font-size: 16px;
+	}
+	.group_1 {
+		margin-bottom: 70px;
+	}
+	.section_2 {
+		margin-top: -130px;
+	}
+	.table {
+		margin-top: 50px;
+	}
+	.section_2 h1 {
+		margin-bottom: 40px;
+	}
+	.info_sec2 {
+		justify-content: start;
+	}
+	.notepad_text_sec2 p{
+		font-size: 16px;
+		width: 100%;
+	}
+	.text_info {
+		margin-top: 60px;
+	}
+}
+@media (max-width: 550px) {
+	.container {
+		background-position-y: -300px;
+	}
+	.main_container {
+		min-height: 160vh;
+	}
+	.logo_text img {
+		margin-top: -100px;
+	}
+	.title {
+		margin-right: 0;
+	}
+	h1 {
+		font-size: 12px;
+		margin-top: 180px;
+	}
+	.logo_text p {
+		font-size: 12px;
+	}
+	.section_2 {
+		margin-top: -100px;
+	}
+	.group_1 h3,
+	.group_2 h3 {
+		font-size: 12px;
+	}
+	.notepad_text_sec2 p{
+		font-size: 12px;
+		width: 100%;
+	}
+}
+@media (max-width: 475px){
+	.logo_text {
+		gap: 20px;
+	}
+	.container {
+		background-position-y: -200px;
+	}
+	.main_container {
+		min-height: 135vh;
+	}
+	.logo_text img {
+		margin-top: -150px;
+	}
+	h1 {
+		font-size: 10px;
+		margin-top: 150px;
+	}
+	.logo_text p {
+		font-size: 10px;
+	}
+	.group_1 h3,
+	.group_2 h3 {
+		font-size: 10px;
+	}
+	.group_1 {
+		margin-bottom: 30px;
+	}
+	.notepad_text_sec2 p{
+		font-size: 10px;
+		width: 100%;
+	}
+	.table {
+		margin-inline: 30px;
+	}
+	.info_sec2 {
+		margin-left: 30px;
+	}
+	.section_2 h1 {
+		margin-left: 30px;
+	}
+}

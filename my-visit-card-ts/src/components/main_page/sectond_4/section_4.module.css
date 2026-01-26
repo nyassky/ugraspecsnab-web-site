@@ -92,6 +92,7 @@
 	position: absolute;
 	right: 0%;
 	bottom: 13%;
+	text-decoration: none;
 }
 .about_button:hover {
 	background-color: white;
@@ -125,6 +126,7 @@ h1 {
 @media (max-width: 960px){
 	.container {
 		padding: 0 50px;
+		margin-top: -200px;
 	}
 	.about_button {
 		font-size: 14px;
@@ -178,7 +180,9 @@ h1 {
 	h1 {
 		font-size: 16px;
 	}
-	
+	.container {
+		margin-top: -400px;
+	}
 }
 @media (max-width: 550px){
 	.about_button{
@@ -188,6 +192,9 @@ h1 {
 	}
 	h1 {
 		font-size: 18px;
+	}
+	.container {
+		margin-top: -400px;
 	}
 }
 @media (max-width: 480px){
@@ -210,6 +217,9 @@ h1 {
 		font-size: 20px;
 		white-space: nowrap;
 	}
+	.container {
+		margin-top: -300px;
+	}
 }
 @media (max-width: 450px){
 	h1 {
@@ -220,11 +230,15 @@ h1 {
 		top: -90%;
 		right: 25%;
 	}
+	.container {
+		margin-top: -200px;
+	}
 }
 @media (max-width: 375px){
 	.container{
 		padding: 0 20px;
-		margin-top: -50px;
+		margin-top: 0px;
+		margin-bottom: 200px;
 	}
 	.main_text{
 		margin-bottom: 50px;

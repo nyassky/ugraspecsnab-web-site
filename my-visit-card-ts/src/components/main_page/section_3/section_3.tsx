@@ -3,7 +3,7 @@ import photo_right from '/img/main_page/photo_right_section_3.svg'
 import photo_left from '/img/main_page/photo_left_section_3.svg'
 import styles from './section_3.module.css'
 import { useScrollAnimation } from './useScrollAnimation'
-
+import { NavLink } from 'react-router-dom'
 function ThirdSection() {
   useScrollAnimation();
 
@@ -26,10 +26,10 @@ function ThirdSection() {
           <div className={styles.photo_right}>
             <img src={photo_right} alt="" />
           </div>
-          <button className={styles.about_button}>
+          <NavLink to="/projects" className={styles.about_button}>
             Смотреть
             <img className={styles.arrow} src={arrow_button} alt="" />
-          </button>
+          </NavLink>
         </div>
       </div>
 
@@ -39,10 +39,10 @@ function ThirdSection() {
           <div className={styles.title}>
             <h1>Реализованные <br></br>проекты</h1>
           </div>
-          <button className={styles.about_button}>
+          <NavLink to="/our_tech" className={styles.about_button}>
             Смотреть
             <img className={styles.arrow} src={arrow_button} alt="" />
-          </button>
+          </NavLink>
         </div>
         <div className={styles.images_row}>
           <div className={styles.photo_left}>
@@ -54,10 +54,10 @@ function ThirdSection() {
         </div>
         {/* Контейнер для кнопки под картинками */}
         <div className={styles.button_container}>
-          <button className={styles.about_button}>
+          <NavLink to="/our_tech" className={styles.about_button}>
             Смотреть
             <img className={styles.arrow} src={arrow_button} alt="" />
-          </button>
+          </NavLink>
         </div>
       </div>
     </section>

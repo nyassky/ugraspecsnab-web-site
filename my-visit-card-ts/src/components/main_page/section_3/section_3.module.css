@@ -104,6 +104,7 @@ p {
   box-sizing: border-box;
   transition: all 0.3s ease;
   border-radius: 45px;
+  text-decoration: none;
 }
 
 .about_button:hover {

@@ -2,6 +2,7 @@ import last_pic from '/img/main_page/last_pic.svg'
 import arrow_button from '/img/main_page/arrow_button.svg'
 import styles from './section_4.module.css'
 import { useScrollAnimation } from './useScrollAnimation_2'
+import { NavLink } from 'react-router-dom'
 function FourthSection() {
 	useScrollAnimation();
 	return(
@@ -12,10 +13,10 @@ function FourthSection() {
 			</div>
 			<div className={styles.main_part}>
 				<img className={styles.main_img} src={last_pic} alt="" />
-				<button className={styles.about_button}>
+				<NavLink to="/our_tech" className={styles.about_button}>
             		Подробнее
             		<img className={styles.arrow} src={arrow_button} alt="" />
-          		</button>
+          		</NavLink>
 			</div>
 		</div>
 	);

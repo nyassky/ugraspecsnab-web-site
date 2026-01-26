@@ -1,7 +1,9 @@
+import { NavLink } from 'react-router-dom';
 import styles from './section_2.module.css'
 import arrow_button from '/img/main_page/arrow_button.svg'
 import photo_about_us_1 from '/img/main_page/photo_about_us_1.svg'
 import photo_about_us_2 from '/img/main_page/photo_about_us_2.svg'
+
 function SecondSection() {
 	return(
 		<section className={styles.about_section}>
@@ -20,7 +22,7 @@ function SecondSection() {
 					<p>Реализуем технически сложные<br/>
 						объекты — быстро, качественно,<br/>
 						в срок. На рынке с 2015 года. </p>
-					<button className={styles.about_button}>О Нас <img className={styles.arrow} src={arrow_button} alt="" /></button>
+					<NavLink to="/about_us" className={styles.about_button}>О Нас <img className={styles.arrow} src={arrow_button} alt="" /></NavLink>
 				</div>
 			</div>
 			<div className={styles.right_column}>
