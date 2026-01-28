@@ -1,6 +1,7 @@
 import MainPage from './components/main_page/main_page';
 import Projects from './components/realized_projects/projects';
 import OurTech from './components/our_tech/our_tech';
+import AboutUs from './components/about_us/about_us';
 import { useScrollToTop } from './hooks/useScrollToTop';
 import './styles/global.css'
 import {Route, Routes} from 'react-router-dom';
@@ -14,7 +15,7 @@ export default function AppRoutes() {
 				/>	
 				<Route
 					path='/about_us'
-					element={<div>О нас</div>}
+					element={<AboutUs />}
 				/>
 				<Route
 					path='/projects'

@@ -16,9 +16,9 @@
 .main_container {
 	position: relative;          /* для фонового слоя, если нужен */
 	width: 100%;
-	min-height: 350vh;           /* контейнер занимает минимум экран */
+	min-height: 100vh;           /* контейнер занимает минимум экран */
 	margin: 0;
-	padding: 0;
+	padding-bottom: 100px;
 	box-sizing: border-box;
 
 }
